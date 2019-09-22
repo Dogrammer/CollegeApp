@@ -4,4 +4,22 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/> -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0"/> -->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\College.Model\College.Model.csproj"/>
+    <ProjectReference Include="..\College.Shared\College.Shared.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.5.0" /> -->
+  </ItemGroup>
+
 </Project>

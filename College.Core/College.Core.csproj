@@ -4,4 +4,17 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- <PackageReference Include="AutoMapper" Version="9.0.0" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+  <!-- <PackageReference Include="Microsoft.AspNetCore.App" /> -->
+    <ProjectReference Include="..\College.Infrastructure\College.Infrastructure.csproj" />
+    <ProjectReference Include="..\College.Model\College.Model.csproj" />
+    <ProjectReference Include="..\College.Shared\College.Shared.csproj" />
+    
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+  </ItemGroup>
+
 </Project>

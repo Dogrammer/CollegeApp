@@ -10,4 +10,23 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+   <ItemGroup>
+    <!-- <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" /> -->
+    <!-- <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" /> -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\College.Core\College.Core.csproj" />
+    <ProjectReference Include="..\College.Infrastructure\College.Infrastructure.csproj" />
+    <ProjectReference Include="..\College.Shared\College.Shared.csproj" />
+    <ProjectReference Include="..\College.Model\College.Model.csproj" />
+  </ItemGroup>
+
 </Project>
